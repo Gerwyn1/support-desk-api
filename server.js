@@ -18,9 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 
 const PORT = process.env.PORT || 8000;
 
-app.get("/", (req, res) => {
-  res.send("Hello from the server!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello from the server!");
+// });
 
 app.use("/api/users", userRoutes);
 app.use("/api/tickets", ticketRoutes);
